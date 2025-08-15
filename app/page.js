@@ -1,9 +1,13 @@
+"use client";
+
 import EmailDropdown from "@/components/EmailDropdown";
 import Image from "next/image";
 import headImg from "../public/assets/img/head-img.svg";
 import Partner from "@/components/Partner";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div
       className="h-screen bg-center bg-cover  pt-[29px] flex flex-col lg:bg-[url(/assets/img/bg.png)] bg-[url(/assets/img/mobile-bg.png)] bg-img"
@@ -38,7 +42,10 @@ export default function Home() {
         <div className="flex items-start flex-col-reverse lg:flex-row lg:gap-[50px] gap-[18.71px] sm:gap-8 w-full md:ml-4">
           <div className="w-full flex flex-col sm:gap-3 gap-2.5 sm:max-w-[454px]">
             <EmailDropdown />
-            <button className="bg-[#332E2E] px-[38px] md:h-[63px] h-[51px] rounded-[129.746px] font-medium text-white text-[14.65px] sm:text-[18.235px] tracking-[-0.18px] sm:tracking-[-0.224px] leading-[80.769%] sm:w-fit w-full cursor-pointer hover:bg-white hover:text-[#332E2E] transition-all ease-linear duration-300">
+            <button
+              onClick={() => router.push("/thank-you")}
+              className="bg-[#332E2E] px-[38px] md:h-[63px] h-[51px] rounded-[129.746px] font-medium text-white text-[14.65px] sm:text-[18.235px] tracking-[-0.18px] sm:tracking-[-0.224px] leading-[80.769%] sm:w-fit w-full cursor-pointer hover:bg-white hover:text-[#332E2E] transition-all ease-linear duration-300"
+            >
               Get Early Access
             </button>
           </div>

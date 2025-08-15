@@ -27,7 +27,7 @@ export default function ThankYou() {
     },
   ];
   return (
-    <div className="h-screen flex justify-center items-center md:py-[70px] py-8">
+    <div className="min-h-screen flex justify-center items-center md:py-[70px] py-8">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 xl:px-[45px] w-full">
         <h4 className="text-black text-[20px] sm:text-[28px] xl:text-[40px] font-bold text-center leading-[119.565%] tracking-[0.038px]">
           Thank you!
@@ -51,7 +51,7 @@ export default function ThankYou() {
           join, the sooner you’ll get access.
         </p>
 
-        <div className="flex gap-4 sm:gap-6 flex-col lg:flex-row items-center justify-center">
+        <div className="mt-8 lg:mt-[80px] flex gap-4 sm:gap-6 flex-col lg:flex-row items-center justify-center">
           <div className="flex items-center gap-4 sm:gap-6">
             {social.map((sc, idx) => (
               <Link key={idx} href={sc.link}>
@@ -60,7 +60,7 @@ export default function ThankYou() {
             ))}
           </div>
 
-          <div className="flex items-center gap-4 flex-wrap justify-center">
+          <div className="flex items-center gap-4 flex-wrap justify-center ">
             <p className="text-black  text-[16px] md:text-[20px] leading-[169.5%] tracking-[0.038px]">
               Or share this unique link:{" "}
               <Link href="" className="text-[#1976D2] underline">

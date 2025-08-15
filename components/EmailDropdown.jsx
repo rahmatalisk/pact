@@ -56,7 +56,7 @@ export default function EmailDropdown() {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute right-7  top-[70px] bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-out w-fit ${
+        className={`absolute right-7 z-10  top-[70px] bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-out w-fit ${
           open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
         // style={{ width: "150px" }}
