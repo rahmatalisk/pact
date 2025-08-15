@@ -1,103 +1,54 @@
+import EmailDropdown from "@/components/EmailDropdown";
 import Image from "next/image";
+import headImg from "../public/assets/img/head-img.svg";
+import Partner from "@/components/Partner";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div
+      className="h-screen bg-center bg-cover  pt-[29px] flex flex-col lg:bg-[url(/assets/img/bg.png)] bg-[url(/assets/img/mobile-bg.png)] bg-img"
+      // style={{ backgroundImage: "url(/assets/img/bg.png)" }}
+    >
+      <div className="flex-1 md:px-[54px] px-3 flex flex-col gap-[56px] justify-between pb-8 md:justify-start">
+        <div>
+          <h3 class="text-[41.15px] bungee-font font-normal leading-[137.703%] tracking-[0.038px] bg-gradient-to-r from-[#0FA7FF] via-[#0FA7FF] to-[#FC56E0] bg-clip-text text-transparent w-fit">
+            Pact.
+          </h3>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h2
+            className="mt-[22px] mb-3 text-white font-normal bungee-font max-w-fit w-full text-[9.15vw] sm:text-[48px] xl:text-[66px] leading-[99.697%] tracking-[0.038px] flex whitespace-nowrap"
+            style={{ textShadow: "0 4px 10.8px rgba(0, 0, 0, 0.77)" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <span>"</span>
+            <span>
+              DROP AR SCENES <br /> IN YOUR CAMPUS
+            </span>{" "}
+            <span className="flex items-end">"</span>
+          </h2>
+
+          <div className="ml-4 text-white bungee-font xl:text-[50px] text-[17.491px] sm:text-[36px] leading-[129.541%] tracking-[0.038px] w-fit max-w-full bg-gradient-to-r from-[#10A7FF] to-[#C23088] md:px-8 px-4 py-1">
+            anywhere... anytime...
+          </div>
+
+          <p className="text-[#FA0] bungee-font text-[14px] sm:text-[20.922px] font-normal leading-[254%] tracking-[0.038%] lg:pl-[50px] pl-4">
+            Coming to 21 schools first
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="flex items-start flex-col-reverse lg:flex-row lg:gap-[50px] gap-[18.71px] sm:gap-8 w-full md:ml-4">
+          <div className="w-full flex flex-col sm:gap-3 gap-2.5 sm:max-w-[454px]">
+            <EmailDropdown />
+            <button className="bg-[#332E2E] px-[38px] md:h-[63px] h-[51px] rounded-[129.746px] font-medium text-white text-[14.65px] sm:text-[18.235px] tracking-[-0.18px] sm:tracking-[-0.224px] leading-[80.769%] sm:w-fit w-full cursor-pointer hover:bg-white hover:text-[#332E2E] transition-all ease-linear duration-300">
+              Get Early Access
+            </button>
+          </div>
+
+          <Image src={headImg} className="w-[80px] sm:w-[120px] xl:w-[184px]" />
+        </div>
+      </div>
+      <div className="">
+        <Partner />
+      </div>
     </div>
   );
 }
