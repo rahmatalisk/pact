@@ -61,9 +61,9 @@ export default function ThankYou() {
           </div>
 
           <div className="flex items-center gap-4 flex-wrap justify-center ">
-            <p className="text-black  text-[16px] md:text-[20px] leading-[169.5%] tracking-[0.038px]">
+            <p className="text-black  text-[16px] md:text-[20px] leading-[169.5%] tracking-[0.038px] text-center">
               Or share this unique link:{" "}
-              <Link href="" className="text-[#1976D2] underline">
+              <Link href="" className="text-[#1976D2] underline text-center">
                 Pact.referral.com
               </Link>
             </p>

@@ -56,7 +56,7 @@ export default function EmailDropdown() {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute right-7 z-10  top-[70px] bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-out w-fit ${
+        className={`absolute right-7 z-10  md:top-[70px] top-[55px] bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-out w-fit ${
           open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
         // style={{ width: "150px" }}
@@ -68,7 +68,7 @@ export default function EmailDropdown() {
               setSelected(domain);
               setOpen(false);
             }}
-            className="px-4 py-2 text-black text-[14.65px] sm:text-[18.235px] tracking-[-0.18px] sm:tracking-[-0.224px] hover:bg-gray-100 cursor-pointer"
+            className="px-4 md:py-2 py-1 text-black text-[14.65px] sm:text-[18.235px] tracking-[-0.18px] sm:tracking-[-0.224px] hover:bg-gray-100 cursor-pointer"
           >
             {domain}
           </div>
