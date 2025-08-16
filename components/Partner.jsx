@@ -41,7 +41,7 @@ export default function Partner() {
     },
   ];
   return (
-    <div className="bg-white min-h-[110px]">
+    <div className=" min-h-[110px]">
       <Marquee>
         <div className="flex items-center ">
           {[...partners, ...partners].map((pt, idx) => (
