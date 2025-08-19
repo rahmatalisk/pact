@@ -46,7 +46,11 @@ export default function Partner() {
         <div className="flex items-center ">
           {[...partners, ...partners].map((pt, idx) => (
             <div key={idx} className="lg:pl-[65px] pl-8">
-              <Image src={pt.logo} className={pt.className} />
+              <Image
+                src={pt.logo}
+                className={`${pt.className} `}
+                style={{ filter: "drop-shadow(0 0 0.03rem #00009C)" }}
+              />
             </div>
           ))}
         </div>
