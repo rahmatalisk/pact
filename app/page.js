@@ -1,17 +1,14 @@
 import GetEarlyAccess from "@/components/GetEarlyAccess";
-import Partner from "@/components/Partner";
+import Universities from "@/components/Universities";
 
 export default function Home() {
   return (
     <div className="overflow-hidden h-screen bg-center bg-cover flex flex-col lg:bg-[url(/assets/img/bg.webp)] bg-[url(/assets/img/mobile-bg.webp)] relative">
-      {/* gardient  */}
-      <div className="absolute left-0 top-0 w-full md:max-w-[780px] md:h-full h-[50%] bg-[linear-gradient(180deg,#000_-23.83%,rgba(0,0,0,0)_100%)] opacity-20 md:opacity-100 md:bg-[linear-gradient(277deg,rgba(0,0,0,0)_11.14%,#000_105.56%)]"></div>
-
       {/* content  */}
       <div className=" pt-[29px] relative flex flex-col flex-1 w-full overflow-y-auto">
         <div className="relative flex-1 md:px-[54px] px-3 flex flex-col gap-[56px] justify-between pb-8 md:justify-start ">
           <div>
-            <h3 class="text-[41.15px] bungee-font font-normal leading-[137.703%] tracking-[0.038px] bg-gradient-to-r from-[#0FA7FF] via-[#0FA7FF] to-[#FC56E0] bg-clip-text text-transparent w-fit">
+            <h3 className="text-[41.15px] bungee-font font-normal leading-[137.703%] tracking-[0.038px] bg-gradient-to-r from-[#0FA7FF] via-[#0FA7FF] to-[#FC56E0] bg-clip-text text-transparent w-fit">
               Pact.
             </h3>
 
@@ -38,7 +35,7 @@ export default function Home() {
           <GetEarlyAccess />
         </div>
         <div className="relative">
-          <Partner />
+          <Universities />
         </div>
       </div>
     </div>
